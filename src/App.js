@@ -1,12 +1,11 @@
-import './App.css';
-import Day from './day';
+import React from 'react'
 
-const App=()=> {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Welcome back rajjo <Day/></h1>
+    <div>
+      <h1>Movies-clone</h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
