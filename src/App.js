@@ -1,9 +1,11 @@
 import React from 'react'
+import Card from './card'
+// import details from './data'
 
 const App = () => {
   return (
     <div>
-      <h1>Movies-clone</h1>
+      <Card/>
     </div>
   )
 }
