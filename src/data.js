@@ -1,15 +1,8 @@
-import { Link } from "react-router-dom";
-
 const details=[
     {
-        title:"movie-name1",
-        image:"first image",
-        link:"https://www.shutterstock.com/image-photo/movie-projector-on-dark-background-600w-753798850.jpg"
-    },
-    {
-        title:"movie-name2",
-        image:"second image",
-        link:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLnFM7mHBZYK-CbAG-WQouG0zhhH3v2SYLlsqB_-2feQqtFpFgWddlm_lHmA7hmYeuyec&usqp=CAU"
+        name:'Money heist',
+        image:'https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg',
+        link:'https://www.netflix.com/watch/80205342?trackId=255824129'
     }
 ]
 

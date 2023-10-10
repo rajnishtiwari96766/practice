@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './card'
-// import details from './data'
 
 const App = () => {
   return (
     <div>
+      <h1>Welcome to my personal netflix</h1>
       <Card/>
     </div>
   )
