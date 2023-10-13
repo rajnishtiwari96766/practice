@@ -1,11 +1,29 @@
 import React from 'react'
-import Card from './card'
+import details from './data'
 
-const App = () => {
+const App = (props) => {
+  
   return (
     <div>
-      <h1>Welcome to my personal netflix</h1>
-      <Card/>
+      {
+        details.map((val, index) => {
+          if (val.x === val.y && val.y === val.z) {
+            return (
+              <p>Matching</p>,
+              
+            )
+          }
+          else {
+            return(
+              <p>Not matching</p>
+            )
+          }
+
+          return({props.x})
+        },
+        )
+      }
+
     </div>
   )
 }
