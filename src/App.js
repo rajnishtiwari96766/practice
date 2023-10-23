@@ -1,29 +1,10 @@
 import React from 'react'
-import details from './data'
+import Logic from './logic'
 
-const App = (props) => {
-  
+const App = () => {
   return (
     <div>
-      {
-        details.map((val, index) => {
-          if (val.x === val.y && val.y === val.z) {
-            return (
-              <p>Matching</p>,
-              
-            )
-          }
-          else {
-            return(
-              <p>Not matching</p>
-            )
-          }
-
-          return({props.x})
-        },
-        )
-      }
-
+      <Logic/>
     </div>
   )
 }
