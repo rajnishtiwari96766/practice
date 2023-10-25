@@ -1,13 +1,20 @@
 import React, { useState } from 'react'
 
 const Logic = () => {
-    const [initial,final]=useState(0)
+ const [value,setvalue]=useState('');
+
+ const handleChange=(event)=>{
+  setvalue(event.target.value); //this will set the final value as in the form of value
+ }
+
+ const handleClick=(event)=>{
+   <p>{value}</p>
+ }
   return (
     <div>
-        <button onClick={()=> final(initial+1)}>Increment</button>
-        <button onClick={()=> final(initial-1)} disabled={initial===0}>decrement</button>
-        <button onClick={()=> final(0)} disabled={initial===0}>Reset</button>
-        <p> button clicked {initial} times</p>
+      <h1>Todo List</h1>
+      <input type='text' placeholder='Enter the text' onChange={handleChange}/>
+      <button onClick={handleClick}>➕</button>
     </div>
   )
 }

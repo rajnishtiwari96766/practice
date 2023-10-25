@@ -3,9 +3,7 @@ import Logic from './logic'
 
 const App = () => {
   return (
-    <div>
-      <Logic/>
-    </div>
+    <Logic/>
   )
 }
 
