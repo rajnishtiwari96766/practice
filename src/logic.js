@@ -7,23 +7,33 @@ const Logic = () => {
  const handleChange=(event)=>{
 
   setvalue(event.target.value); //this will set the final value as in the form of value
+  
 }
 
-const handleClick=()=>{
-  setmessage(value)
+const addValue=()=>{
+  setmessage([...message,value]) //here the value is appended
+  setvalue(' ')
+}
+
+const removeValue=(index)=>{
+  const newMsg=[...message]
+  newMsg.splice(index,1)
+  setvalue(newMsg)
+
 }
 
   return (
     <div>
       <h1>Todo List</h1>
       <input type='text' placeholder='Enter the text' onChange={handleChange}/>
-      <button onClick={handleClick}>➕</button>
+      <button onClick={addValue}>➕</button>
      
       <div>
-      {/* <p>{message}</p> */}
-      {message.map((value)=>{
+      {message.map((val,index)=>{
         return(
-          <p>{message}</p>
+          <ul>
+            <li>{val} <button onClick={removeValue}> ➖</button></li>
+          </ul>
         )
       })}
       </div>
@@ -32,3 +42,5 @@ const handleClick=()=>{
 }
 
 export default Logic
+
+
