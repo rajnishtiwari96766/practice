@@ -15,12 +15,6 @@ const addValue=(event)=>{
   setvalue('')
 }
 
-const removeValue=(index)=>{
-  const newMsg=[...message]
-  newMsg.splice(index,1)
-  setvalue(newMsg)
-}
-
   return (
     <div>
       <h1>Todo List</h1>
@@ -41,5 +35,3 @@ const removeValue=(index)=>{
 }
 
 export default Logic
-
-
