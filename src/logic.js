@@ -5,14 +5,16 @@ const Logic = () => {
  const [message, setmessage] = useState([])
 
  const handleChange=(event)=>{
-
   setvalue(event.target.value); //this will set the final value as in the form of value
 }
 
 const addValue=(event)=>{
   setmessage([...message,value]) //here the value is appended
-  // event.preventDefault()
   setvalue('')
+}
+
+const removeValue=()=>{
+  setvalue(' ')
 }
 
   return (
@@ -25,7 +27,11 @@ const addValue=(event)=>{
       {message.map((val,index)=>{
         return(
           <ul>
-            <li key={index}>{val}</li>
+            <li key={index}>{val} 
+            <button onClick={removeValue}>➖</button>
+          
+             </li>
+
           </ul>
         )
       })}
